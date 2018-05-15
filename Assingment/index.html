@@ -1,87 +1,108 @@
 <!doctype html>
 <html>
-<head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
+   <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <div class="container">
+         <header>Interactive Website</header>
+      </div>
+   </head>
+   <body>
+      <!--GAME 1-->
+      <h1>Input Your Name and Click the Button</h1>
+      <div class="input-group mb-3">
+         <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Your Name</span>
+         </div>
+         <input id='name' type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+         <button onclick="game1()" class="btn btn-primary btn-lg btn-block">Submit</button>
+      </div>
+      </div>
+      <!-- GAME 2 - CONVERTION-->
+      <div class="container">
+         <h1 id="hello">Welcome</h1>
+      </div>
+      <div class="input-group mb-3">
+         <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Insert a Fahrenheit value</span>
+            <input  id="insertF" class="form-control" placeholder="00" aria-label="Username" aria-describedby="basic-addon1">
+            <button onclick="game2()" class="btn btn-primary btn-lg btn-block">Convert to Celsius</button>
+            <span class="input-group-text" id="converted">Converted</span>
+         </div>
+      </div>
+      <!--GAME 3-->
+      <div class="container-fluid-sm-12">
+      <div class="row-sm-12">
+         <div class="col-sm-6">
+            <div class="form-check">
+               <legend>Who is the Brazilian studant at HTML class? </legend>
+               <input onclick="alert('wrong!!')" class="form-check-input option false" type="checkbox" value="Milad">
+               <label class="form-check-label">
+               Milad
+               </label><br>
+               <input onclick="alert('wrong!!')" class="form-check-input option" type="checkbox" value="Satori" id="defaultCheck1">
+               <label class="form-check-label" for="defaultCheck1">
+               Satori
+               </label><br>
+               <input onclick="alert('Correct!!! :)')" class="form-check-input option" type="checkbox" value="Andre" id="defaultCheck1">
+               <label class="form-check-label" for="defaultCheck1">
+               Andre
+               </label><br>
+               <input onclick="alert('wrong!!')" class="form-check-input option" type="checkbox" value="Hibiki" id="defaultCheck1">
+               <label class="form-check-label" for="defaultCheck1">
+               Hibiki
+               </label><br>
+            </div>
+            <!--end of form-->
+         </div>
+         <div class="col-sm-6">
+            <div class="form-check">
+               <legend>Question 1 </legend>
+               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+               <label class="form-check-label" for="defaultCheck1">
+               Answer 1
+               </label><br>
+               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+               <label class="form-check-label" for="defaultCheck1">
+               Answer 2
+               </label><br>
+               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+               <label class="form-check-label" for="defaultCheck1">
+               Answer 3
+               </label><br>
+               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+               <label class="form-check-label" for="defaultCheck1">
+               Answer 4
+               </label><br>
+            </div>
+            <!--end of form-->
+         </div>
+         <!--end of row-->  
+      </div>
+      <!--end of container-->
+      <br>
+      <!--GAME4-->
+       <h1>Input your age and Click the button</h1>
+      <div class="input-group mb-3">
+         <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Age</span>
+            <input id='age' type="text" class="form-control" placeholder="years old" aria-label="years old" aria-describedby="basic-addon1">
+            <button onclick="game4()" class="btn btn-primary btn-lg btn-block">Check</button>
+
+         </div>
+         <br>
+         <h1>Input a number and Click the button to know if it is a prime number</h1>
+      <div class="input-group mb-3">
+         <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Number</span>
+            <input id='number' type="text" class="form-control" placeholder="number" aria-label="number" aria-describedby="basic-addon1">
+            <button onclick="game5()" class="btn btn-primary btn-lg btn-block">Check</button>
+
+         </div>
 
 
-	<div class="container">
-		<header>Interactive Website</header>
-	</div>
-</head>
-<body>
-<!--GAME 1 -- HELLO-->
-	<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">Your Name</span>
-  </div>
-  <input id='name' type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-  <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
-</div>
-<!-- GAME 2 - CONVERTION-->
-<div class="container">
-	<h1 id="hello">Welcome</h1>
-</div>
-
-	<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">Insert a Fahrenheit value</span>
-    <input type="text" class="form-control" placeholder="00" aria-label="Username" aria-describedby="basic-addon1">
-      <button id="insertF" type="button" class="btn btn-primary btn-lg btn-block">Convert to Celsius</button>
-</div>
-    </div>
-<!--GAME 3-->
-<div class="container-fluid-sm-12">
-	<div class="row-sm-12">
-		<div class="col-sm-6">
-			<div class="form-check">
-	<legend>Question 1 </legend>	
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Answer 1
-  </label><br>
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Answer 2
-  </label><br>
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Answer 3
-  </label><br>
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Answer 4
-  </label><br>
-</div><!--end of form-->
-
-		</div>
-		<div class="col-sm-6">
-			<div class="form-check">
-	<legend>Question 1 </legend>	
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Answer 1
-  </label><br>
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Answer 2
-  </label><br>
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Answer 3
-  </label><br>
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Answer 4
-  </label><br>
-</div><!--end of form-->
-	</div><!--end of row-->	
-</div><!--end of container-->
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>	
-</body>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js/main.js"></script> 
+   </body>
 </html>
