@@ -12,7 +12,7 @@ function game1(){
 function game2(){
 	 let f = document.getElementById('insertF').value;
 	 let c = (f - 32) / 1.8;
-	document.getElementById('converted').innerHTML = c;
+	document.getElementById('converted').innerHTML = c + ("Celsius");
 }
 
 // GAME 4
@@ -35,32 +35,22 @@ function game5(){
 
 let number = document.getElementById('number').value;
 let divisor = 2;
+let remainder = number % divisor;
 
 
 if (number < 2 ) {
 	alert("It's not Prime")
-} else if(number = 2){
+} else if(number == 2){
 	alert("Number is Prime")
 } else if (number > 2) {
-
-	let remainder = number % divisor
-	if(remainder = 0){
-		alert("It's not Prime")
-
-	}else {
-		divisor += 1
+		for(divisor < number; divisor == number; divisor += 1){
+		if(remainder == 0){
+			alert("It's not Prime")
+		}else if (divisor == number) {
+			alert("number is Prime")
+		}
 	}
-		if (divisor === number) {
-		alert("number is Prime")
-	}
-
 }
-
-
-
-
-
-
 
 }
 
