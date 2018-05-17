@@ -87,7 +87,7 @@ function game5() {
     } else if (number > 2) {
         for (divisor = 2; divisor = number ; divisor += 1) {
             if (remainder == 0) {
-                alert("It's not Prime")
+                alert("It's not Prime")}
                  else if (divisor == number) {
                 alert("number is Prime")
             }
@@ -96,4 +96,4 @@ function game5() {
         }
 
     }
-}
+
